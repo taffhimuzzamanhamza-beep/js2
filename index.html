@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Calculator</title>
+</head>
+<body>
+  <h1> Calculator </h1>
+
+  <p id="result"></p>
+
+  <script>
+
+    let first = prompt("Enter the first number:");
+    let operator = prompt("Enter operator (+, -, *, /):");
+    let second = prompt("Enter the second number:");
+
+    let num1 = Number(first);
+    let num2 = Number(second);
+    let result ;
+
+    if(operator == "+") {
+        result = num1 + num2
+    }
+    else if (operator == "-") {
+               result = num1 - num2
+    }
+    else if (operator == "*") {
+               result = num1 * num2
+    }
+    else if (operator == "/") {
+               result = num1 / num2
+    }
+    else {
+        result = "Invalid Operator"
+    }
+ 
+    document.getElementById("result").innerHTML = "Result: " + num1 + " " + operator + " " + num2 + " = " + result;
+
+    
+  </script>
+</body>
+</html>
